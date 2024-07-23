@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+}
+
+.blue-gradient {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.pages {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.homepage1 {
+    position: relative;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    z-index: 2;
+    left: 0;
+    right: 0;
+}
+
+.navbar-1 {
+   color: linear-gradient(to bottom, #004eff, #005bfc, #0067f8, #0071f2, #127aeb);
+}
+.navbar-2 {
+    display: flex;
+}
+
+.nav-items {
+    padding: 0 10px 0;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.navbar,
+.bg-image {
+    position: absolute;
+}
+
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+} 
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.black-bg {
+    position: absolute;
+    background-color: black;
+    opacity: 80%;
+    z-index: 1;
+   width: 100%;
+   height: 100%;
+    
+} 
+
+.homepage2 {
+    background-color: orange;
+}
+
+
+
+/* media queries  */
+
