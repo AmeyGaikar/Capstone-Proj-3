@@ -1,18 +1,21 @@
 body {
     margin: 0;
     display: block;
+    padding: 0;
+}
+
+@font-face {
+    font-family: mrt;
+    src: url(./Fonts/merodictrial-jpr4x.ttf.otf);
 }
 
 .pages {
     height: 100vh;
-
 }
 
 .container {
     margin: auto;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  
+    max-width: 1068px;
 }
 
 .homepage1 {
@@ -119,13 +122,16 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 50px;
+    font-size: 100px;
+    
 }
 
 .headlines {
     display: block;
     width: 100%;
     height: 100%;
+    font-family: mrt;
+    color: #39B6FA;
 }
 
 /* homepage ends */
@@ -135,12 +141,15 @@ body {
 
 /* about section starts */
 .about {
+  margin-top: 7rem;
+  margin-bottom: 7em;
     width: auto;
     max-width: 70%;
     display: flex;
     justify-content: space-between;
     gap: 8%;
     align-items: center;
+    margin-bottom: 5em;
 }
 
 .about p {
@@ -182,18 +191,17 @@ body {
 /* about section ends */
 
 /* grid section starts  */
-.grid-layout-parent {
-    max-width: 70%;
-    height: fit-content;
-    margin-top: 10%;
-}
+
 
 .grid-layout-child {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
     justify-content: center;
-    gap: 4.5%;
+    gap: 1.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
+
 
 .grid-item {
     background-color: white;
@@ -212,6 +220,18 @@ body {
     font-size: large;
 }
 
+.grid-item h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.grid-item p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .grid-img {
     max-width: 100%;
     width: 100%;
@@ -222,12 +242,134 @@ body {
     width: 100%;
     border-radius: 12px;
 }
+
 /* grid section ends */
 
 /* second page ends */
 
+/* footer section starts  */
+.black-container {
+    background-color: black;
+}
 
-/* media queries start*/
+.footer-container {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    max-width: 75%;
+    gap: 4em;
+}
+
+.footer-first-portion {
+    width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.footer-first-portion .heading {
+    color: white;
+    padding: 1rem 0 0 1rem;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+.footer-first-portion .sub-heading {
+    color: white;
+    font-size: 0.75em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 1rem 0 0 1rem;
+}
+
+.footer-second-portion {
+    flex: 2;
+    padding: 1rem 0 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10em;
+}
+
+.footer-logo {
+    height: 15em;
+    width: 15em;
+    position: relative;
+    
+}
+
+.footer-logo-bg-1 {
+    height: 15em;
+    width: 15em;
+    background-color: #233032;
+    border-radius: 2.2em 0;
+    position: absolute;
+    z-index: 1;
+    top: 1em;
+    left: 1em;
+
+}
+
+.footer-logo-content {
+    height: 15em;
+    width: 15em;
+    background-color: #00FFFF;
+    border-radius: 2.2em 0;
+    position: absolute;
+    z-index: 2;
+    filter: drop-shadow(10px 10px 100px black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.footer-logo img {
+    filter: drop-shadow(1px 1px 1px black);
+}
+/* footer section ends  */
+
+/* media queries start */
+@media (max-width:1060px) {
+    .container {
+        margin: 0 auto;
+        width: 95%
+    }
+   
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-second-portion {
+        column-gap: 7rem;
+    }
+
+    .grid-layout-child {
+
+        margin-top: 5rem;
+        margin-bottom: 5rem; 
+    }
+
+    
+}
+
 @media (max-width: 840px) {
     .about {
         flex-direction: column;
@@ -236,10 +378,8 @@ body {
         justify-content: center;
         max-width: 100vw;
         width: 100%;
-        margin: auto;
         height: auto;
         padding: 0;
-
     }
 
     .about p {
@@ -265,8 +405,23 @@ body {
         margin: 10px 0 20px 0;
 
     }
+     
+    .footer-second-portion {
+        flex-direction: column;
+        row-gap: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo {
+        right: 1rem;
+    }
+
+
 
 }
+
 
 
 /* media queries end */
