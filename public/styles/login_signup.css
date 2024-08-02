@@ -1,0 +1,76 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.bg-image-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.bg-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.black-bg {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left:0;
+    opacity: 80%;
+}
+
+.login-page-container {
+    height: 500px;
+    width: 20rem;
+    filter: drop-shadow(0px 0px 0.75rem grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 3rem;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.login-page-container h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.login-page-container {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page h1 {
+    flex: 2;
+}
+
+#email-id {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+#password {
+    flex: 1;
+}
