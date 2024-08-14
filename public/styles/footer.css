@@ -1,0 +1,129 @@
+.black-container {
+    background-color: black;
+}
+
+.footer-container {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    max-width: 75%;
+    gap: 4em;
+}
+
+.footer-first-portion {
+    width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.footer-first-portion .heading {
+    color: white;
+    padding: 1rem 0 0 1rem;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+.footer-first-portion .sub-heading {
+    color: white;
+    font-size: 0.75em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 1rem 0 0 1rem;
+}
+
+.footer-second-portion {
+    flex: 2;
+    padding: 1rem 0 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 4em;
+}
+
+.footer-logo {
+    height: 15em;
+    width: 15em;
+    position: relative;
+
+}
+
+.footer-logo-bg-1 {
+    height: 15em;
+    width: 15em;
+    background-color: #233032;
+    border-radius: 2.2em 0;
+    position: absolute;
+    z-index: 1;
+    top: 1em;
+    left: 1em;
+
+}
+
+.footer-logo-content {
+    height: 15em;
+    width: 15em;
+    background-color: #00FFFF;
+    border-radius: 2.2em 0;
+    position: absolute;
+    z-index: 2;
+    filter: drop-shadow(10px 10px 100px black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.footer-logo img {
+    filter: drop-shadow(1px 1px 1px black); 
+}
+
+
+@media (max-width:1060px) {
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .footer-second-portion {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 840px) {
+
+.footer-second-portion {
+        flex-direction: column;
+        row-gap: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo {
+        right: 1rem;
+    }
+
+
+
+}
+

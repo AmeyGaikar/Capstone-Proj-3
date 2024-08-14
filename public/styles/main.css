@@ -158,7 +158,6 @@ body {
 
 /* about section starts */
 .about {
-   
     margin-bottom: 7em;
     width: auto;
     max-width: 70%;
@@ -180,7 +179,6 @@ body {
     font-style: normal;
     font-size: clamp(14px, 2vw, 18px);
     margin: auto;
-
 }
 
 .about-image {
@@ -194,7 +192,6 @@ body {
 .about img {
     width: 100%;
     height: auto;
-
 }
 
 .about-heading {
@@ -202,11 +199,44 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-
-
 }
 
 /* about section ends */
+
+/* grid seperator section starts */
+.article-seperator {
+    display: flex;
+    max-width: 50%;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: aqua;
+    font-size: large;
+    width: 80%;
+    background-color: black;
+    border: 1px solid #bacdd8;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 0.75em grey);
+}
+
+.article-seperator p { 
+cursor: pointer;
+}
+
+.article-seperator p:hover {
+    color: lightblue;
+}
+
+.hiding-grid-items {
+    display: none;
+}
+
+
+
+
+/* grid seperator section ends */
+
 
 /* grid section starts  */
 
@@ -220,6 +250,10 @@ body {
     margin-bottom: 5rem;
 }
 
+.grid-layout-child a {
+ text-decoration: none;
+ color: inherit;
+}
 
 .grid-item {
     background-color: white;
@@ -227,7 +261,7 @@ body {
     border-radius: 12px;
     padding: 3%;
     filter: drop-shadow(0 0 0.75rem grey);
-
+    cursor: pointer;
 }
 
 .grid-item h2 {
@@ -266,7 +300,7 @@ body {
 /* second page ends */
 
 /* footer section starts  */
-.black-container {
+/* .black-container {
     background-color: black;
 }
 
@@ -357,8 +391,8 @@ body {
 }
 
 .footer-logo img {
-    filter: drop-shadow(1px 1px 1px black);
-}
+    filter: drop-shadow(1px 1px 1px black); */
+
 
 /* footer section ends  */
 
